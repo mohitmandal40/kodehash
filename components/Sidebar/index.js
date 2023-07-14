@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext, useState } from "react";
-import classes from "./Sidebar.module.css";
+import classes from "./sidebar.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
