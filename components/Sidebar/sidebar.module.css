@@ -1,0 +1,66 @@
+.Sidebar {
+  height: 100vh;
+  background-color: #13142f;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  grid-template-rows: 100px auto 1fr;
+  justify-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 70%;
+}
+
+.NavItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  justify-self: center;
+}
+
+.NavItem {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.NavItem:hover {
+  background-color: #ff969638;
+}
+
+.NavItem a {
+  text-decoration: none;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 4px 16px;
+  color: #fff;
+}
+
+.sidebar {
+  position: fixed;
+  top: 84px;
+  left: 0;
+  bottom: 0;
+  background-color: #f1f1f1;
+  transition: all 0.3s ease;
+  width: 300px;
+}
+
+.active {
+  background-color: #ff969638;
+}
