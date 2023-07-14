@@ -11,14 +11,7 @@ export default async function BlogIdLayout({ children, params }) {
       <div className={styles.sidebar}>
         <Sidebar data={res} blogId={params.blogId} />
       </div>
-      <div
-        className={styles.content}
-        style={{
-          width: true ? "calc(100vw - 300px)" : "calc(100vw - 100px)",
-        }}
-      >
-        {children}
-      </div>
+      <div className={styles.content}>{children}</div>
     </div>
   );
 }

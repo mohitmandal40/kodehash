@@ -64,3 +64,9 @@
 .active {
   background-color: #ff969638;
 }
+
+@media (max-width: 900px) {
+  .NavItems {
+    flex-direction: row;
+  }
+}
